@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <!-- مهم عشان يشتغل مضبوط على الموبايل واللاب توب -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>إلى حبيبتي ❤️</title>
+
+    <!-- ربط ملف الستايل -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- خلفية تأثيرات -->
+    <div class="background-overlay"></div>
+
+    <!-- موسيقى عامة للموقع كله -->
+    <!-- تأكد أن ملف الموسيقى اسمه بالضبط: music.mp3 -->
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <!-- زر تشغيل/إيقاف الموسيقى (ثابت تحت الشاشة) -->
+    <button id="music-toggle" class="music-toggle-btn">تشغيل الموسيقى 🎵</button>
+
+    <div class="page-wrapper">
+        <!-- الهيدر -->
+        <header class="hero">
+            <div class="hero-content">
+                <p class="hero-tagline">إلى أجمل بنت في الكون</p>
+                <h1 class="hero-title">حبيبتي الغالية 💖</h1>
+                <p class="hero-subtitle">
+                    هذا الموقع معمول مخصوص عشان أقولك إنك أحلى حاجة حصلت لي في حياتي.
+                </p>
+
+                <!-- أزرار تنقل سريعة -->
+                <div class="hero-buttons">
+                    <button class="btn primary hero-step-btn" data-step-target="1">
+                        نبدأ الرحلة 💌
+                    </button>
+                    <button class="btn ghost hero-step-btn" data-step-target="5">
+                        على طول للمفاجأة 🎁
+                    </button>
+                </div>
+
+                <!-- شريط الخطوات -->
+                <div class="steps-nav">
+                    <button class="step-indicator active" data-step="0">البداية</button>
+                    <button class="step-indicator" data-step="1">ليه بحبك؟</button>
+                    <button class="step-indicator" data-step="2">حكايتنا</button>
+                    <button class="step-indicator" data-step="3">اختبار</button>
+                    <button class="step-indicator" data-step="4">رسالة</button>
+                    <button class="step-indicator" data-step="5">المفاجأة</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي (الخطوات) -->
+        <main class="steps-container">
+            <!-- Step 0: البداية -->
+            <section class="section step active" data-step="0">
+                <h2 class="section-title">جاهزة نبدأ؟ 😍</h2>
+                <p class="section-subtitle">
+                    كل اللي هتشوفيه هنا معمول مخصوص ليكي… خطوة خطوة، وبشوية حب وتهبيل بسيط ❤️
+                </p>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev" disabled>رجوع</button>
+                    <button class="btn primary step-next">التالي ➜</button>
+                </div>
+            </section>
+
+            <!-- Step 1: ليه بحبك -->
+            <section class="section step" data-step="1">
+                <h2 class="section-title">ليه بحبك؟ 😌</h2>
+                <p class="section-subtitle">
+                    مش محتاج أسباب عشان أحبك… بس هقول شوية منهم كده على السريع 💕
+                </p>
+
+                <div class="cards-grid">
+                    <article class="card">
+                        <span class="card-emoji">😂</span>
+                        <h3>ضحكتك</h3>
+                        <p>ضحكتك قادرة تقلب أي يوم بايظ ليوم جميل جداً.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-emoji">🤍</span>
+                        <h3>قلبك</h3>
+                        <p>طيبتك وحنانك على كل الناس حاجة نادرة ومميزة.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-emoji">🧠</span>
+                        <h3>عقلك</h3>
+                        <p>نقاشك وتفكيرك في كل حاجة بيخلّيني أحب أسمعك دايمًا.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-emoji">🌙</span>
+                        <h3>وجودِك</h3>
+                        <p>وجودك في حياتي مخلّي الدنيا ألطف وأسهل وأجمل.</p>
+                    </article>
+                </div>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev">⬅ رجوع</button>
+                    <button class="btn primary step-next">التالي ➜</button>
+                </div>
+            </section>
+
+            <!-- Step 2: حكايتنا -->
+            <section class="section soft step" data-step="2">
+                <h2 class="section-title">حكايتنا 📖</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            أول مرة كلمتك… حسّيت إن في حاجة مختلفة، وإن دي مش صدفة عادية.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            لما عرفتك أكتر… اكتشفت إن قلبك وعقلك أجمل بكتير من أي حاجة كنت متخيلها.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            دلوقتي… وجودك في حياتي بقى من أحلى النِعم اللي بدعي ربنا يحافظ عليها دايمًا 🤍
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev">⬅ رجوع</button>
+                    <button class="btn primary step-next">التالي ➜</button>
+                </div>
+            </section>
+
+            <!-- Step 3: اختبار -->
+            <section class="section step" data-step="3">
+                <h2 class="section-title">اختبار بسيط 😏</h2>
+                <p class="section-subtitle">
+                    جواب واحد بس… بس أهم سؤال 😌
+                </p>
+
+                <div class="quiz-box">
+                    <h3>مين أكتر واحد بيحبك في الدنيا؟ 🥺</h3>
+                    <div class="quiz-buttons">
+                        <button class="btn quiz-btn" data-answer="right">
+                            الشخص اللي عامل لك الموقع ده 😌
+                        </button>
+                        <button class="btn quiz-btn" data-answer="wrong">
+                            حد تاني 🙄
+                        </button>
+                    </div>
+                    <p id="quiz-result" class="quiz-result"></p>
+                </div>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev">⬅ رجوع</button>
+                    <button class="btn primary step-next">التالي ➜</button>
+                </div>
+            </section>
+
+            <!-- Step 4: رسالة -->
+            <section class="section step" data-step="4">
+                <h2 class="section-title">رسالة من قلبي لكِ 💌</h2>
+                <p class="section-subtitle">
+                    يفضّل تشغّلي الموسيقى من الزر اللي تحت… وبعدين تقري الكلام ده بهدوء 🎶
+                </p>
+
+                <div class="love-letter">
+                    <p class="letter-text">
+                        يمكن عمري ما كنت شاطر في الكلام، بس معاكي بحس إن أبسط كلمة بتطلع من قلبي على طول،
+                        من غير تفكير ومن غير تحضير. أنا بحبّك مش بس عشان إنتِ حلوة… لكن عشان روحك وطريقة
+                        إحساسك بكل حاجة حواليكي.
+                    </p>
+                    <p class="letter-text">
+                        بحب تفاصيلك الصغيرة اللي يمكن إنتِ ما بتركزيش فيها، بس أنا بحفظها: ضحكتك، سكوتك،
+                        طريقة كلامك لما تكوني فرحانة، وحتى زعلك اللطيف اللي في الآخر بيخلّيني أحبك أكتر.
+                    </p>
+                    <p class="letter-text">
+                        لو في يوم شكّيتي في نفسك أو حسّيتي إنك مش كفاية… افتكري إن في حد هنا شايفك كل الدنيا،
+                        ومتمسك بيكي أكتر من أي حاجة تانية 🤍
+                    </p>
+                </div>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev">⬅ رجوع</button>
+                    <button class="btn primary step-next">التالي ➜</button>
+                </div>
+            </section>
+
+            <!-- Step 5: المفاجأة -->
+            <section class="section soft step" data-step="5">
+                <h2 class="section-title">المفاجأة 🎁</h2>
+                <p class="section-subtitle">
+                    لو وصلتي لحد هنا… فده في حد ذاته أكبر هدية ليا 🥺🤍
+                </p>
+
+                <div class="surprise-box">
+                    <p class="big-message">
+                        أنا فعلًا بحبك، وفخور بيكي، وبوجودك في حياتي أكتر مما تتخيلي.  
+                        وبدعي ربنا دايمًا يفضلك جنبي ومايحرمنيش منك أبدًا 🤍🔥
+                    </p>
+                    <button id="hearts-btn" class="btn primary">
+                        لو بتحبّيني… اضغطي هنا 💘
+                    </button>
+                    <p class="small-note">
+                        *لو ما ضغطتيش… هزعل 😢 (بهزر… نص بهزار 😏)*
+                    </p>
+                </div>
+
+                <div class="step-footer">
+                    <button class="btn ghost step-prev">⬅ رجوع</button>
+                    <button class="btn primary step-next step-finish">
+                        نعيد الرحلة من الأول 😄
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- الفوتر -->
+        <footer class="footer">
+            هذا الموقع معمول بحب كبير من
+            <span class="highlight">[IBRAHIM]</span> 💞
+            إلى
+            <span class="highlight">[DIDA]</span> 💞
+        </footer>
+    </div>
+
+    <!-- ربط ملف الجافاسكربت -->
+    <script src="script.js"></script>
+</body>
+</html>
